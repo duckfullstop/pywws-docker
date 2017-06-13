@@ -1,5 +1,5 @@
-FROM alpine:3.5
-MAINTAINER Andrew <me@duck.me.uk>
+FROM alpine:latest
+LABEL maintainer "Andrew <me@duck.me.uk>"
 
 RUN apk add --no-cache python3 \
     libusb \
@@ -11,7 +11,13 @@ RUN apk add --no-cache python3 \
     py3-cryptography \
     gnuplot
 RUN pip3 install --upgrade pip
-RUN pip3 install libusb1 python-twitter oauth2 tzlocal pycrypto paramiko
-RUN pip3 install pywws
+RUN pip3 install \
+    libusb1 \
+    python-twitter \
+    oauth2 \
+    tzlocal \
+    pycrypto \
+    paramiko \
+    pywws
 
 VOLUME ["/var/data"]
