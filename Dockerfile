@@ -22,6 +22,7 @@ RUN pip3 install \
     oauth2 \
     tzlocal \
     pycrypto \
+    paho-mqtt \
     pywws
 
 VOLUME ["/var/data"]
