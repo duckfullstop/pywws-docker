@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer "Andrew <me@duck.me.uk>"
+LABEL maintainer "Matt Hilton <matthilton2005@gmail.com>"
 
 RUN apk add --no-cache python3 \
     libusb \

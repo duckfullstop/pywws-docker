@@ -1,5 +1,5 @@
 # pywws-docker
-[Docker Hub](https://hub.docker.com/r/duckfullstop/pywws-docker/)
+[Docker Hub](https://hub.docker.com/r/matt2005/pywws-docker/)
 
 Provides a Docker image for pywws. Find out more about pywws here: https://github.com/jim-easterbrook/pywws
 
@@ -9,8 +9,8 @@ Use `--privileged` to give access to USB devices (you should also be able to dir
 
 Test the connection like this:
 
-docker run –-privileged duckfullstop/pywws pywws-testweatherstation
+docker run –-privileged matt2005/pywws pywws-testweatherstation
 
 Following Jim's example using ~/weather/data, you can gather data onto your local file system like this:
 
-docker run -–privileged -v ~/weather/data:/var/data duckfullstop/pywws-docker pywws-livelog /var/data
+docker run -–privileged -v ~/weather/data:/var/data matt2005/pywws-docker pywws-livelog /var/data
